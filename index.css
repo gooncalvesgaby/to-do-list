@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: #fff;
+    --color-dark: rgb(14, 14, 14);
+}
+
+body {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.conteudo {
+    display: contents;
+}
+
+.add-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.lista {
+}
+
+#add-input, 
+#add-list {
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+
+#add-input {
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+#add-list {
+    
+}
