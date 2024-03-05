@@ -7,6 +7,8 @@
 :root {
     --color-white: #fff;
     --color-dark: rgb(14, 14, 14);
+    --color-dark2: rgb(189, 189, 189);
+    --color-dark3: rgb(27, 27, 27);
 }
 
 body {
@@ -20,7 +22,9 @@ body {
 
 
 .conteudo {
-    display: contents;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .add-conteudo {
@@ -28,9 +32,6 @@ body {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-}
-
-.lista {
 }
 
 #add-input, 
@@ -43,9 +44,35 @@ body {
 
 #add-input {
     width: 20rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 #add-list {
-    
+    background-color: var(--color-dark2);
+    color: var(--color-white);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;    
+    transition: .4s;
+}
+
+#add-list:hover {
+    background-color: var(--color-dark3);
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+}
+
+#list li {
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
