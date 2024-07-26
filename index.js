@@ -23,6 +23,8 @@ function createButtonClear(li) {
     li.innerText += ' ';
     const buttonClear = document.createElement('button');
     buttonClear.innerText = 'Apagar';
+    buttonClear.setAttribute('class', 'apagar');
+    buttonClear.setAttribute('title', 'Apagar Task')
     li.appendChild(buttonClear);
 
 }
@@ -38,5 +40,14 @@ function createTask(textoInput) {
 taskList.addEventListener('click', function() {
     if (!inputTask.value) return;
     createTask(inputTask.value);
+});
+
+
+document.addEventListener('click', function(e) {
+    const el = e.target;
+
+    if(el.classList.contains('apagar')) {
+        el.parentElement.remove();
+    }
 });
 
