@@ -2,6 +2,18 @@ const inputTask = document.getElementById("add-input");
 const taskList = document.getElementById("add-list");
 const list = document.getElementById("list");
 
+// function addTask(){
+//     const inputTask = document.getElementById('add-input');
+//     const inputAddTask = inputTask.trim();
+
+//     if (inputAddTask === "") {
+//         alert("Digite uma task");
+//         return;
+//     }
+// }
+
+
+
 function createLi() {
     const li = document.createElement('li');
     return li;
